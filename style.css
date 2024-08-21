@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/iu_239827_6628546.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 100;
+}
+
+nav { /* Creates flexbox for the navigation buttons */
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li { /* Navigation Buttons */
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; /* 10px top-bottom, 20px left-right */
+}
+
+nav ul li a { /* Buttons Style */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Buttons Hover Effect */
+nav ul li a::after { 
+    content: '';
+    width: 0%; /* Does not show underline before cursor */
+    height: 3px;
+    background: #ff004f;
+    position: absolute; 
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Shows underline touching cursor for hover effect */
+}
+
+.header-text { /* Entire header text file */
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 { /* Main Text box only */
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span { /* Colors whatever wrapped between <span> */
+    color: #ff004f;
+}
