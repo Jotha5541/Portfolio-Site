@@ -36,12 +36,69 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1"></div>
-
+                        <img src="images/background.webp">
                     <div class="about-col-2"></div>
                         <h1 class="sub-title"> About Me </h1>
-                        <p> I am a college student attending University of California, Riverside. I am </p>
+                        <p> I am a college student attending University of California, Riverside. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                            <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                            <p class="tab-links" onclick="opentab('education')"> Education </p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                           <ul>
+                            <li> <span> [Add Skills Here] </span><br> [Add Skills Here] </li>
+                            <li> <span> [Add Skills Here] </span><br> [Add Skills Here] </li>
+                            <li> <span> [Add Skills Here] </span><br> [Add Skills Here] </li>
+                           </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                             <li> <span> [Add Stuff Here] </span><br> [Add Stuff Here] </li>
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="education">
+                            <ul>
+                             <li> <span> [Add Stuff Here] </span><br> [Add Stuff Here] </li>
+                            </ul>
+                         </div>
                 </div>
             </div>
         </div>
+        <!-- ====== Portfolio Page ====== -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title"> My Work </h1>
+                <div class="work-list">
+                    <div class="work">
+                        <!-- Add Image Here -->
+                        <div class="layer">
+                            <h3> Roster Index Organizer </h3>
+                            <p> <!-- Add Description Here --> </p> 
+                            <a href="#"> <i class="fsa fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script> 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-conents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabconent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
     </body>
 </html>
