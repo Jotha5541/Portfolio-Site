@@ -11,13 +11,17 @@ body {
     color: #fff;
 }
 
+
+
+
 /* ========== HOME PAGE ========== */
 #header {
     width: 100%;
-    height: 100vh;
-    background-image: url(images/iu_239827_6628546.jpeg);
+    height: 90vh;
+    background-image: url(images/hollowPlanet.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -77,6 +81,13 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
+
+
+
+
+
+
+
 /* ======== ABOUT ME PAGE ======== */
 #about {
     padding: 80px 0;
@@ -94,8 +105,9 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-    width: 10%;
+    width: 100%;
     border-radius: 15px;
+    margin-left: 30px;  
 }
 
 .about-col-2 {
@@ -143,7 +155,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #b54769;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .tab-contents {
@@ -153,6 +165,12 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
+
+
+
+
+
+
 
 /* ======== PORTFOLIO PAGE ======== */
 #portfolio {
@@ -199,7 +217,7 @@ nav ul li a:hover::after {
 }
 
 .layer h3 {
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
